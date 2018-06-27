@@ -5,7 +5,7 @@ inline-js-default-resources
 [![codecov](https://codecov.io/gh/eight04/inline-js-default-resources/branch/master/graph/badge.svg)](https://codecov.io/gh/eight04/inline-js-default-resources)
 [![install size](https://packagephobia.now.sh/badge?p=inline-js-default-resources)](https://packagephobia.now.sh/result?p=inline-js-default-resources)
 
-This repository contains the buildtin resources for [inline-js](https://github.com/eight04/inline-js)
+This repository contains the builtin resources for [inline-js](https://github.com/eight04/inline-js)
 
 Installation
 ------------
@@ -48,6 +48,6 @@ A set of resource type. These resources use a filepath as their first argument, 
 Changelog
 ---------
 
-* 0.1.0 (Jan 21, 2017)
+* 0.1.0 (Jun 27, 2018)
 
     - First release.
