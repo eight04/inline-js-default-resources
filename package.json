@@ -7,23 +7,24 @@
   "engines": {
     "node": ">=8"
   },
+  "eslintIgnore": ["coverage"],
   "scripts": {
-    "lint": "eslint **/*.js --ignore-pattern coverage --cache",
-    "nyc": "nyc --reporter=html mocha",
-    "test": "npm run lint && npm run nyc",
+    "lint": "eslint **/*.js --cache",
+    "test": "npm run lint && c8 --reporter lcov mocha",
     "preversion": "npm test",
     "postversion": "git push --follow-tags && npm publish"
   },
   "files": [],
   "main": "index.js",
   "dependencies": {
-    "is-binary-path": "^2.0.0"
+    "is-binary-path": "^2.1.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "mocha": "^5.2.0",
+    "c8": "^5.0.1",
+    "eslint": "^5.16.0",
+    "inline-js-core": "^0.5.0",
+    "mocha": "^6.1.4",
     "mocha-context": "^0.1.2",
-    "nyc": "^11.8.0",
     "tempdir-yaml": "^0.2.1"
   },
   "repository": "eight04/inline-js-default-resources"
